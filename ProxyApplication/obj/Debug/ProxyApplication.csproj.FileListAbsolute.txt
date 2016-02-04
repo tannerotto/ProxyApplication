@@ -1,1 +1,7 @@
 C:\Users\arctair\Documents\DuckGame\Mods\ArcsDuck\ProxyApplication\ProxyApplication\bin\Debug\ProxyApplication.exe.config
+C:\Users\arctair\Documents\Code\ProxyApplication\ProxyApplication\bin\Debug\ProxyApplication.exe.config
+C:\Users\arctair\Documents\Code\ProxyApplication\ProxyApplication\bin\Debug\ProxyApplication.exe
+C:\Users\arctair\Documents\Code\ProxyApplication\ProxyApplication\bin\Debug\ProxyApplication.pdb
+C:\Users\arctair\Documents\Code\ProxyApplication\ProxyApplication\obj\Debug\ProxyApplication.exe
+C:\Users\arctair\Documents\Code\ProxyApplication\ProxyApplication\obj\Debug\ProxyApplication.pdb
+C:\Users\arctair\Documents\Code\ProxyApplication\ProxyApplication\obj\Debug\ProxyApplication.csprojResolveAssemblyReference.cache
