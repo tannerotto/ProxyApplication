@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -13,7 +14,19 @@ namespace ProxyApplication
         {
             Console.WriteLine("Initializing proxy application");
 
+            short port;
+
+            // check for important arguments primitively
+            foreach (string a in args)
+            {
+                // check for port in the form xxxxx where x represents a digit and xxxxx is in the interval [0,65535]
+                if (Regex.IsMatch(a, @"^\d{1,5}$") && Convert.ToInt32(a) < 65536)
+                    port = Convert.ToInt16(a);
+            }
+
             Console.Write("Proxy application loaded. ");
+
+
 
             if (Array.Exists(args, arg =>
                 arg.ToLower().Equals("--client") ||
@@ -21,6 +34,10 @@ namespace ProxyApplication
             {
                 Console.WriteLine();
                 Client(args);
+            }
+            else if (args.Length > 0)
+            {
+
             }
             else
             {
